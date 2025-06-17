@@ -1,6 +1,20 @@
-# TrendRadar-多平台热点资讯监控分析系统
+<div align="center">
 
-> 如果这个项目对你有帮助，请通过 **点击 Star ⭐** 支持我一下！
+# 🎯 TrendRadar
+
+**多平台热点资讯监控分析系统**
+
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.7%2B-3776AB?style=flat-square&logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/version-v1.0.0-green.svg?style=flat-square)](https://github.com/sansan0/TrendRadar)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg?style=flat-square)](https://github.com/sansan0/TrendRadar)
+
+[![飞书通知](https://img.shields.io/badge/飞书-通知支持-00D4AA?style=flat-square)](https://www.feishu.cn/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-自动化-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/sansan0/TrendRadar)
+
+</div>
+
+> 本项目只是我写文章的副产品...如果项目对你有帮助，请 **点击 Star ⭐** 支持我~~有条件的可选择去【硅基茶水间】公众号对应文章下面[点赞][转发][推荐]任选其一就行，我能在后台看到你们的支持，成为老粉就在今天哈哈~在我写文章的萌新阶段雪中送炭，好处大大的有(≧∇≦)ﾉ
 
 ## ✨ 核心功能
 
@@ -12,22 +26,36 @@
 
 - **智能内容筛选** - 支持自定义频率词，过滤词和必须词的配置，精准定位关注话题，有效过滤无关信息噪音
 
-- **多渠道实时推送** - 通过**飞书机器人**推送重要资讯，一键跳转新闻详情，实现移动端便捷访问
+- **多渠道实时推送** - 通过**飞书机器人** 推送重要资讯或者**GitHub Pages** 自带的设置页面，一键跳转新闻详情。如果 star 的人多的话，后续会加入**企业微信**，**钉钉**，**telegram**等推送渠道
 
-- **可视化数据报表** - 自动生成 HTML 统计报告，包含热点词频分析、时间轴追踪和排名变化趋势，提供直观的数据洞察
+- **开箱即用部署** - 一键 Fork 即可部署，简化部署流程和技术门槛
 
-- **云端全自动化** - 基于 GitHub Actions 的 CI/CD 流水线，支持定时任务和 Webhook 触发，实现无服务器的持续监控
-
-- **开箱即用部署** - 一键 Fork 即可部署，支持 GitHub Secrets 环境变量配置，简化部署流程和技术门槛
+> GitHub Pages 自带的设置页面对大多数人更方便, 配置一下，保存一个网页链接即可，放手机浏览器里也随时可看， 比如我这里[https://sansan0.github.io/TrendRadar/](https://sansan0.github.io/TrendRadar/)，该链接每 50 分钟 更新一次
 
 ## 更新日志
+
+> 飞书机器人创建完得点发布得点发布得点发布~除了 issues 里，还有几位跑公众号问的最后也排查出是这个问题，我以为我的步骤已经很详细了/(ㄒ o ㄒ)/~~如果你还遇到什么问题，往下翻到常见问题( •̀ ω •́ )✧
+
+### 2025/06/16
+
+1. 正式版本 1.0.0 发布
+2. 增加了一个项目新版本更新提示，默认打开，如要关掉，可以在 main.py 中把 "FEISHU_SHOW_VERSION_UPDATE": True 中的 True 改成 False 即可
+
+### 2025/06/13+14
+
+1. 去掉了兼容代码，之前 fork 的同学，直接复制代码会在当天显示异常（第二天会恢复正常）
+2. feishu 和 html 底部增加一个新增新闻显示
+
+<p align="center">
+  <img src="_image/2025-06-14.jpg" alt="更新" width="400"/>
+</p>
 
 ### 2025/06/09
 
 **100 star⭐** 了，写个小功能给大伙儿助助兴
 frequency_words.txt 文件增加了一个【必须词】功能，使用 + 号
 
-1. 默认的频率词语法如下：
+1. 默认的频率词语法如下：  
    唐僧或者猪八戒在标题中出现一个就可以被记录到推送
 
 ```
@@ -35,7 +63,7 @@ frequency_words.txt 文件增加了一个【必须词】功能，使用 + 号
 猪八戒
 ```
 
-2. 必须词语法如下：
+2. 必须词语法如下：  
    唐僧或者猪八戒必须在标题里同时出现
 
 ```
@@ -43,7 +71,7 @@ frequency_words.txt 文件增加了一个【必须词】功能，使用 + 号
 +猪八戒
 ```
 
-3. 过滤词的优先级更高：
+3. 过滤词的优先级更高：  
    如果标题中匹配到唐僧念经，那么即使必须词里有唐僧，也不显示
 
 ```
@@ -107,7 +135,7 @@ frequency_words.txt 文件增加了一个【必须词】功能，使用 + 号
 
 3. **自定义关键词**:
 
-   - 修改`frequency_words.txt`文件，添加你需要监控的频率词和过滤词
+   - 修改`frequency_words.txt`文件，添加你需要监控的频率词，过滤词，必须词
 
 4. **自动运行**:
 
@@ -170,8 +198,6 @@ GPT
 | - 时间        | - 12 时 30 分               | 首次发现时间 | 标题首次被发现的时间                    |
 | [时间 ~ 时间] | [12 时 30 分 ~ 14 时 00 分] | 时间范围     | 标题出现的时间范围(首次~最后)           |
 | (N 次)        | (4 次)                      | 出现次数     | 标题在监控期间出现的总次数              |
-
-> 如果不想麻烦的进行飞书消息推送设置，可以用 GitHub 自带的设置页面, 配置一下，保存一个网页链接即可，放手机浏览器里随时可看， 比如我这里[https://sansan0.github.io/TrendRadar/](https://sansan0.github.io/TrendRadar/)
 
 ## 🤖 飞书机器人设置
 
@@ -265,6 +291,10 @@ ids = [
 </div>
 
 ![微信公众号](_image/weixin.png)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sansan0/TrendRadar&type=Date)](https://www.star-history.com/#sansan0/TrendRadar&Date)
 
 ## 🙏 致谢
 
