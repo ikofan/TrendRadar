@@ -2,14 +2,27 @@
 Actros
 eActros
 
+纳斯达克
+标普
+
 美股
-Apple
-AAPL
-NVDA
-TSLA
-RXRX
+英伟达
+特斯拉
+
+美股
+石油
 巴西石油
 
+美股
+苹果
+AAPL
+Apple
+
+美股
+AI医疗
+RXRX
+
+美股
 量子计算
 QUBT
 IonQ
@@ -36,11 +49,16 @@ google
 gemini
 deepmind
 
+美股
 芯片
 半导体
-中芯国际
 AMD
 英特尔
 Intel
+
+港股
+中芯国际
+中海油
+小米
 
 核能
