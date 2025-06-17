@@ -1,14 +1,25 @@
 奔驰卡车
 Actros
+eActros
 
 美股
+Apple
 AAPL
 NVDA
 TSLA
 RXRX
+巴西石油
 
 量子计算
 QUBT
+IonQ
+Rigetti
+
+加密货币
+比特币
+稳定币
+MSTR
+微策略
 
 马斯克
 特斯拉
@@ -20,17 +31,16 @@ Microsoft
 英伟达
 NVIDIA
 
-AMD
-
 谷歌
 google
 gemini
 deepmind
 
-机器人
-
 芯片
 半导体
-光刻机
+中芯国际
+AMD
+英特尔
+Intel
 
 核能
