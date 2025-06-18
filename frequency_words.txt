@@ -55,6 +55,7 @@ deepmind
 AMD
 英特尔
 Intel
+陈立武
 
 港股
 中芯国际
