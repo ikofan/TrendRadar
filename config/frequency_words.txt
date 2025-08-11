@@ -23,6 +23,14 @@ NVDA
 
 AMD
 
+英特尔
+INTL
+陈立武
+
+美股
+纳斯达克
+标普
+
 谷歌
 google
 gemini
